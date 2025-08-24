@@ -1,0 +1,14 @@
+{
+  "name": "smart-expense-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.10.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "echo \"Use your preferred bundler (CRA/Vite).\""
+  }
+}
