@@ -1,21 +1,23 @@
 # Smart Expense Tracker – Backend
 
-## Quick Start
-1. Create and activate a virtual environment.
-2. `pip install -r requirements.txt`
-3. Configure MySQL in `expense_tracker/settings.py` (NAME/USER/PASSWORD).
-4. `python manage.py migrate`
-5. Create a superuser: `python manage.py createsuperuser`
-6. Run server: `python manage.py runserver`
+##smart-expense-tracker/
+│── backend/       # Django REST API
+│── frontend/      # React.js app
+│── README.md
+│── requirements.txt
+│── package.json
 
-### Auth (JWT)
-- Obtain token: `POST /api/auth/token/` with username & password.
-- Refresh token: `POST /api/auth/token/refresh/`.
+##Installation & Setup
+git clone https://github.com/your-username/smart-expense-tracker.git
+cd smart-expense-tracker
 
-### Expenses API
-- `GET /api/expenses/` – list
-- `POST /api/expenses/` – create
-- `GET /api/expenses/{id}/` – retrieve
-- `PUT/PATCH /api/expenses/{id}/` – update
-- `DELETE /api/expenses/{id}/` – delete
-- `GET /api/expenses/summary_by_category/` – aggregate for charts
+##Backend Setup
+cd backend
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+##Frontend Setup (React)
+cd frontend
+npm install
+npm start
